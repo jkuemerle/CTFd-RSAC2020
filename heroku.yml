@@ -5,7 +5,5 @@ setup:
 build:
   docker:
     web: Dockerfile
-  config:
-    FOO=$JAWSDB_URL
 run:
     web: /opt/CTFd/docker-entrypoint.sh
