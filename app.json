@@ -1,0 +1,12 @@
+{
+    "name": "Everyone Can Play! CTFd",
+    "description": "A ready to use instance of CTFd from @jkuemerle",
+    "repository": "https://github.com/jkuemerle/CTFd",
+    "keywords": ["ctfd", "python", "rsac2020"],
+    "stack" : "container",
+    "addons": [
+        "jawsdb:kitefin",
+        "heroku-redis:hobby-dev"
+    ],
+    "env": {}
+}
