@@ -38,6 +38,13 @@ fi
 python manage.py db upgrade
 
 # Start CTFd
+if [ -z "$IMPORT_ID" ]
+then
+    echo "No import"
+else
+    echo "Starting Import $IMPORT_ID"
+    python /opt/CTFd/import.py "/opt/CTFd/events/$IMPORT_ID/export.zip"
+fi
 echo "Starting CTFd"
 exec gunicorn 'CTFd:create_app()' \
     --bind 0.0.0.0:$PORT \
