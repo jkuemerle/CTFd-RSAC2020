@@ -16,6 +16,7 @@ services:
       - ACCESS_LOG=-
       - ERROR_LOG=-
       - PORT=8000
+      - IMPORT_ID=RSA2020
     depends_on:
       - rsadb
     networks:

@@ -124,6 +124,7 @@ def export_ctf():
 
 
 def import_ctf(backup, erase=True):
+    print(f'Restoring from: {backup}')
     if not zipfile.is_zipfile(backup):
         raise zipfile.BadZipfile
 
